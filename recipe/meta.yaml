@@ -9,34 +9,47 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 24f59e6380c936daf91a5180c9a7153a328a7a22381bbfcc7a43f094e027fdfb 
 build:
-  noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
 
-requirements:
-  host:
-    - python >=3.8
-    - pip
-    - setuptools
-    - setuptools_scm
-    - babel
-  run:
-    - python >=3.8
-    - weldx >=0.6
-    - ipywidgets
-    - k3d
-    - ipympl
-    - bidict
-    - ipyfilechooser
-    - tqdm
-
-test:
-  imports:
-    - weldx_widgets
-  requires:
-    - pip
-  commands:
-    - pip check
+outputs:
+  - name: {{ name }}
+    build:
+      noarch: python
+      script: "{{ PYTHON }} -m pip install . -vv"
+    requirements:
+      host:
+        - python >=3.8
+        - pip
+        - setuptools
+        - setuptools_scm
+        - babel
+      run:
+        - python >=3.8
+        - weldx >=0.6
+        - ipywidgets
+        - k3d
+        - ipympl
+        - bidict
+        - ipyfilechooser
+        - tqdm
+    
+    test:
+      imports:
+        - weldx_widgets
+      requires:
+        - pip
+      commands:
+        - pip check
+  # alias
+  - name: weldx-widgets
+    build:
+      noarch: python
+    requirements:
+      run:
+        - {{ pin_subpackge(name, exact=True) }}
+    test:
+      imports:
+        - weldx_widgets
 
 about:
   home: https://github.com/BAMWeldX/weldx-widgets
