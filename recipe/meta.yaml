@@ -15,7 +15,7 @@ outputs:
   - name: {{ name }}
     build:
       noarch: python
-      script: python -m pip install . -vv
+      script: python -m pip install . -vv --no-deps
     requirements:
       host:
         - python >=3.8
