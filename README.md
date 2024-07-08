@@ -36,6 +36,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-weldx--widgets-green.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-weldx_widgets-green.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) |
 
 Installing weldx_widgets
@@ -48,41 +49,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `weldx_widgets` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `weldx-widgets, weldx_widgets` can be installed with `conda`:
 
 ```
-conda install weldx_widgets
-```
-
-or with `mamba`:
-
-```
-mamba install weldx_widgets
-```
-
-It is possible to list all of the versions of `weldx_widgets` available on your platform with `conda`:
-
-```
-conda search weldx_widgets --channel conda-forge
+conda install weldx-widgets weldx_widgets
 ```
 
 or with `mamba`:
 
 ```
-mamba search weldx_widgets --channel conda-forge
+mamba install weldx-widgets weldx_widgets
+```
+
+It is possible to list all of the versions of `weldx-widgets` available on your platform with `conda`:
+
+```
+conda search weldx-widgets --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search weldx-widgets --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search weldx_widgets --channel conda-forge
+mamba repoquery search weldx-widgets --channel conda-forge
 
-# List packages depending on `weldx_widgets`:
-mamba repoquery whoneeds weldx_widgets --channel conda-forge
+# List packages depending on `weldx-widgets`:
+mamba repoquery whoneeds weldx-widgets --channel conda-forge
 
-# List dependencies of `weldx_widgets`:
-mamba repoquery depends weldx_widgets --channel conda-forge
+# List dependencies of `weldx-widgets`:
+mamba repoquery depends weldx-widgets --channel conda-forge
 ```
 
 
