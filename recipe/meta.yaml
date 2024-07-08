@@ -18,13 +18,13 @@ outputs:
       script: python -m pip install . -vv --no-deps
     requirements:
       host:
-        - python >=3.8
+        - python >=3.8,<3.12
         - pip
         - setuptools
         - setuptools_scm
         - babel
       run:
-        - python >=3.8
+        - python >=3.8,<3.12
         - weldx >=0.6
         - ipywidgets
         - k3d
@@ -32,6 +32,8 @@ outputs:
         - bidict
         - ipyfilechooser
         - tqdm
+        - matplotlib <3.9
+        - numpy <2
 
     test:
       imports:
