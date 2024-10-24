@@ -18,7 +18,7 @@ outputs:
       script: python -m pip install . -vv --no-deps
     requirements:
       host:
-        - python >=3.8,<3.12
+        - python >=3.9
         - pip
         - setuptools
         - setuptools_scm
