@@ -24,7 +24,7 @@ outputs:
         - setuptools_scm
         - babel
       run:
-        - python >=3.8,<3.12
+        - python >=3.8
         - weldx >=0.6
         - ipywidgets
         - k3d
