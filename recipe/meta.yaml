@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 76d29d780451c46cdd951b10fb83d00392b7362f47b60df7b9c94a33aa462a58
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: {{ name }}
@@ -24,7 +24,7 @@ outputs:
         - setuptools_scm
         - babel
       run:
-        - python >=3.8,<3.12
+        - python >=3.8
         - weldx >=0.6
         - ipywidgets
         - k3d
