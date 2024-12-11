@@ -33,7 +33,8 @@ outputs:
         - ipyfilechooser
         - tqdm
         - matplotlib <3.9
-        - numpy <2
+        - numpy
+        - pint
 
     test:
       imports:
