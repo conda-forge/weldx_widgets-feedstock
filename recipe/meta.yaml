@@ -25,7 +25,7 @@ outputs:
         - babel
       run:
         - python >={{ python_min }}
-        - weldx >=0.6
+        - weldx >=0.6.9
         - ipywidgets
         - k3d
         - ipympl
