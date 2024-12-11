@@ -1,5 +1,5 @@
 {% set name = "weldx_widgets" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,9 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76d29d780451c46cdd951b10fb83d00392b7362f47b60df7b9c94a33aa462a58
+  sha256: 311bf6bf37a733e4c3d28bebac1deb2242cfa11e368d427b2b1f3a297bcb92dd
 build:
-  number: 2
+  number: 0
 
 outputs:
   - name: {{ name }}
@@ -25,15 +25,16 @@ outputs:
         - babel
       run:
         - python >={{ python_min }}
-        - weldx >=0.6
+        - weldx >=0.6.9
         - ipywidgets
         - k3d
         - ipympl
         - bidict
         - ipyfilechooser
         - tqdm
-        - matplotlib <3.9
-        - numpy <2
+        - matplotlib-base <3.9
+        - numpy
+        - pint
 
     test:
       imports:
