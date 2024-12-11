@@ -32,7 +32,7 @@ outputs:
         - bidict
         - ipyfilechooser
         - tqdm
-        - matplotlib <3.9
+        - matplotlib-base <3.9
         - numpy
         - pint
 
