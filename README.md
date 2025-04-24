@@ -37,7 +37,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-weldx--widgets-green.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/weldx-widgets.svg)](https://anaconda.org/conda-forge/weldx-widgets) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-weldx_widgets-green.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-weldx__widgets-green.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/weldx_widgets.svg)](https://anaconda.org/conda-forge/weldx_widgets) |
 
 Installing weldx_widgets
 ========================
@@ -154,5 +154,4 @@ Feedstock Maintainers
 =====================
 
 * [@CagtayFabry](https://github.com/CagtayFabry/)
-* [@marscher](https://github.com/marscher/)
 
