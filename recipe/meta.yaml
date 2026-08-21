@@ -1,13 +1,13 @@
 {% set name = "weldx_widgets" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0daec839e34802c6db95ae2944163ae12823a0df315e81aa1c9170c77999769
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 34352c6137b1713dab6d2755364c05eba565f0dfe11b04e4cc57bc6719887259
 build:
   number: 0
 
