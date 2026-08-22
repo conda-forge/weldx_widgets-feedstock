@@ -1,13 +1,13 @@
 {% set name = "weldx_widgets" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0daec839e34802c6db95ae2944163ae12823a0df315e81aa1c9170c77999769
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 34352c6137b1713dab6d2755364c05eba565f0dfe11b04e4cc57bc6719887259
 build:
   number: 0
 
@@ -20,21 +20,22 @@ outputs:
       host:
         - python {{ python_min }}
         - pip
-        - setuptools
-        - setuptools_scm
-        - babel
+        - hatchling >=1.27.0
+        - hatch-vcs >=0.4.0
       run:
         - python >={{ python_min }}
-        - weldx >=0.6.9
-        - ipywidgets >=8.1
-        - k3d <2.17
-        - ipympl
         - bidict
+        - decorator
         - ipyfilechooser
-        - tqdm
-        - matplotlib-base >=3.8
+        - ipympl
+        - ipython >=8
+        - ipywidgets >=8.1
+        - k3d >=2.12
+        - matplotlib >=3.8
         - numpy
         - pint
+        - tqdm
+        - weldx >=0.7
 
     test:
       imports:
